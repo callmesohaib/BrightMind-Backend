@@ -16,6 +16,11 @@ app.use(express.json());
 app.use("/api/auth", authRouter);
 app.use("/api/data", courseRouter);
 
+app.use('/', function(req, res) {
+  res.send('Hello from the server!');
+});
+
+
 const port = 3000;
 
 connectDb().then(() => {
