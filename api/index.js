@@ -7,7 +7,7 @@ const connectDb = require("../Utils/db");
 const courseRouter = require("../Routes/course-router");
 
 const Corsoptions = {
-  origin: ["http://localhost:5173","https://bright--mind.vercel.app"],
+  origin: ["https://bright--mind.vercel.app", "http://localhost:5173"],
   methods: ["GET", "POST", "DELETE", "PUT", "PATCH"],
   credentials: true,
 };
