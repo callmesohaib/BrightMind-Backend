@@ -16,8 +16,6 @@ app.use(express.json());
 app.use("/api/auth", authRouter);
 app.use("/api/data", courseRouter);
 
-
-
 const port = 3000;
 
 connectDb().then(() => {
